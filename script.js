@@ -1,6 +1,6 @@
 // complete the given function
 
-function palindrome(str){
+function palindrome(s){
 // 	str.trim();
 // 	str.toLowerCase();
 // for(var i=0; i<str.length/2; i++){
