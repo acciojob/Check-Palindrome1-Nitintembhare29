@@ -1,14 +1,11 @@
 // complete the given function
-
-function palindrome(str){
-	str.trim();
-	str.toLowerCase();
-for(var i=0; i<str.length/2; i++){
-	if(str.charAt(i)!=str.charAt(str.length-1-i)){
-		return false;
-	}
- 
-	}
-return true;
-}
-module.exports = palindrome
+function isPalindrome(s) {
+  // Convert the string to lowercase and remove non-alphanumeric characters
+  s = s.toLowerCase().replace(/[^a-z0-9]/g, '');
+  
+  // Compare characters in forward and backward direction
+  for (let i = 0; i < Math.floor(s.length / 2); i++) {
+    if (s[i] !== s[s.length - 1 - i]) {
+      return false;
+    }
+  }
