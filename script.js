@@ -2,7 +2,7 @@
 function isPalindrome(s) {
   // Convert the string to lowercase and remove non-alphanumeric characters
   s = s.toLowerCase().replace(/[^a-z0-9]/g, '');
-	console.log(s);
+	
   
   // Compare characters in forward and backward direction
   for (let i = 0; i < s.length / 2; i++) {
